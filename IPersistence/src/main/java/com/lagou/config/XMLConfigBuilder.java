@@ -15,7 +15,7 @@ import java.util.Properties;
 
 public class XMLConfigBuilder {
 
-    private Configuration configuration;
+    private final Configuration configuration;
 
     public XMLConfigBuilder() {
         this.configuration = new Configuration();
@@ -38,10 +38,8 @@ public class XMLConfigBuilder {
         }
 
         ComboPooledDataSource comboPooledDataSource = new ComboPooledDataSource();
-        comboPooledDataSource.setDriverClass(properties.getProperty("driverClass"));
-        comboPooledDataSource.setJdbcUrl(properties.getProperty("jdbcUrl"));
-        comboPooledDataSource.setUser(properties.getProperty("username"));
-        comboPooledDataSource.setPassword(properties.getProperty("password"));
+        comboPooledDataSource.setDriverClass(properties.getProperty("driver"));
+        comboPooledDataSource.setJdbcUrl(properties.getProperty("url"));
 
         configuration.setDataSource(comboPooledDataSource);
 
@@ -53,12 +51,7 @@ public class XMLConfigBuilder {
             InputStream resourceAsSteam = Resources.getResourceAsSteam(mapperPath);
             XMLMapperBuilder xmlMapperBuilder = new XMLMapperBuilder(configuration);
             xmlMapperBuilder.parse(resourceAsSteam);
-
         }
-
-
-
-
         return configuration;
     }
 
