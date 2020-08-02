@@ -11,7 +11,10 @@
 - 修改了 IPersistence 的 XMLConfigBuilder 中关于数据源的配置
 - 删掉了 IPersistence 的 pom.xml 中对 mysql 的依赖
 
-作业讲解见 
+> 经多次尝试，我台式机的麦克风没有声音，试过耳机还是不行，笔记本在公司，最终决定放弃录制视频，作业讲解见下面的 markdown 文件
+> 
+>关于验证的部分，只要运行 T001.test2() 方法即可（无需安装 mysql）
+ 
 [作业讲解.md](https://github.com/yanghonghao/task1-1/blob/master/%E4%BD%9C%E4%B8%9A%E8%AE%B2%E8%A7%A3.md)
 
 ## 简答题
