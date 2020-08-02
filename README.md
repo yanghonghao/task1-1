@@ -11,7 +11,8 @@
 - 修改了 IPersistence 的 XMLConfigBuilder 中关于数据源的配置
 - 删掉了 IPersistence 的 pom.xml 中对 mysql 的依赖
 
-
+作业讲解见 
+[作业讲解.md](https://github.com/yanghonghao/task1-1/blob/master/%E4%BD%9C%E4%B8%9A%E8%AE%B2%E8%A7%A3.md)
 
 ## 简答题
 ### 1、Mybatis动态sql是做什么的？都有哪些动态sql？简述一下动态sql的执行原理？
