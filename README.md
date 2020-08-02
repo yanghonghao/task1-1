@@ -11,6 +11,8 @@
 - 修改了 IPersistence 的 XMLConfigBuilder 中关于数据源的配置
 - 删掉了 IPersistence 的 pom.xml 中对 mysql 的依赖
 
+
+
 ## 简答题
 ### 1、Mybatis动态sql是做什么的？都有哪些动态sql？简述一下动态sql的执行原理？
 答1：在进行 sql 操作时，动态的将属性拼接到 sql 语句中
